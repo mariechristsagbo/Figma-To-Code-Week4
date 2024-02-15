@@ -10,6 +10,14 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #typing {
+        border-right: 2px solid;
+        font-family: monospace;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body class="font-['Sora']">
     <header class="lg:block hidden">
@@ -68,56 +76,55 @@
       </section> -->
 
     <section>
-      <div
-        class="flex lg:justify-around items-center lg:py-[5em] py-[4em] flex-col text-center lg:flex-row lg:max-w-[100em]"
-      >
+      <div class="flex lg:items-center py-[4em] flex-col-reverse lg:flex-row lg:justify-around lg:py-[5em] text-center">
         <div class="lg:text-left lg:pl-[6.5em]">
-          <h1 class="lg:text-[3em] text-[2em]">
-            Hello I'm <span class="font-bold">Evren Shah.</span>
+          <h1 class="text-[2em] lg:text-[3em]">
+            Hello I'm <span class="font-bold" id="typing"></span>
           </h1>
-
-          <h1 class="lg:text-[3em] text-[2em] font-bold">
+      
+          <h1 class="font-bold text-[2em] lg:text-[3em]">
             Frontend <span class="font-bold">Developer</span>
           </h1>
-
-          <h1 class="lg:text-[3em] text-[2em]">
+      
+          <h1 class="text-[2em] lg:text-[3em]">
             Based In <span class="font-bold">India</span>
           </h1>
-
-          <p class="text-[#737373] pb-8 lg:text-md text-[1em] pt-5">
+      
+          <p class="text-[#737373] text-[1em] pt-5 pb-8 lg:text-md">
             I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
             <br />
             typesetting industry. Lorem Ipsum has been the industry's standard
             <br />
             dummy text ever since the 1500s, when an unknown printer took a
             <br />
-            galley of type and scrambled it to specimen book.
+            galley of type and scrambled it to make a type specimen book.
           </p>
-
-          <div class="flex justify-center items-center lg:justify-start gap-8">
-            <div class="bg-black p-3 border rounded-md">
+      
+          <div class="flex items-center justify-center gap-8 lg:justify-start">
+            <div class="p-3 border rounded-md bg-black">
               <img src="assets/icons/Social icon.svg" alt="Facebook" />
             </div>
-            <div class="border-black p-3 border rounded">
+            <div class="p-3 border rounded border-black">
               <img src="assets/icons/Social icon (1).svg" alt="Facebook" />
             </div>
-            <div class="border-black p-3 border rounded">
+            <div class="p-3 border rounded border-black">
               <img src="assets/icons/Social icon (2).svg" alt="Facebook" />
             </div>
-            <div class="border-black p-3 border rounded">
+            <div class="p-3 border rounded border-black">
               <img src="assets/icons/Social icon (3).svg" alt="Facebook" />
             </div>
           </div>
         </div>
-
-        <div class="w-1/2 lg:pr-[6em]">
-          <img src="assets/images/Frame 20.svg" alt="" />
+      
+        <div class="w-full lg:w-1/2 flex justify-center lg:pr-[6em]">
+          <img src="assets/images/Frame 20.svg" alt="" class="mx-auto" />
         </div>
       </div>
+      
     </section>
 
     <section class="py-[5em]">
-      <div class="px-[6.5em]">
+      <div class="px-[6.5em] md:grid md:grid-cols-1">
       <h1 class="text-[2em] pb-[2em] text-center sm:text-[40px]">
         My <span class="font-bold">Skills</span>
       </h1>
@@ -460,5 +467,42 @@
           </div>
         </div>
     </footer>
+
+
+    <script>
+      const element = document.getElementById('typing');
+      const text = 'Evren Shah';
+      let index = 0;
+      let deleting = false;
+    
+      function type() {
+        if (!deleting && index < text.length) {
+          // Ajouter un caractère
+          element.textContent += text.charAt(index++);
+        } else if (deleting) {
+          
+          element.textContent = element.textContent.substring(0, element.textContent.length - 1);
+          index--;
+        }
+    
+        
+        if (index === text.length) {
+          deleting = true;
+         
+        } else if (index === 0 && deleting) {
+          
+          deleting = false;
+        }
+    
+       
+        let timeout = deleting ? 150 : 300; 
+        setTimeout(type, timeout);
+      }
+    
+     
+      type();
+    </script>
+    
+    
   </body>
 </html>
