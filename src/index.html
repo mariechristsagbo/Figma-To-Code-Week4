@@ -1,42 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-['Sora']">
     <header class="lg:block hidden">
-        <div class="flex justify-between items-center pt-6 px-[6.5em]">
-          <div>
-            <img src="assets/icons/Logo.svg" alt="">
-          </div>
-          <nav class="lg:flex lg:justify-around lg:items-center lg:gap-10 hidden">
-            <ul
-              class="flex justify-between gap-5 font-bold text-[1em] text-primary-color"
-            >
-              <li class=""><a href="index.html">Home</a></li>
-              <li class=""><a href="teams.html">Teams</a></li>
-              <li class="">
-                <a href="#">Pricing</a>
-              </li>
-              <li class="">
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="flex justify-between items-center gap-[45px]">
-            <button
-              class="flex transition-transform duration-300 hover:scale-110 justify-around items-center gap-2 text-white px-[0.85em] py-[0.7em] rounded-md text-[1em] font-bold bg-[#000000]"
-            >
-              Resume
-              <span><img src="assets/icons/download.svg" alt="" /></span>
-            </button>
-          </div>
+      <div class="flex justify-between items-center pt-6 px-[6.5em]">
+        <div>
+          <img src="assets/icons/Logo.svg" alt="" />
         </div>
-      </header>
-  
-      <!-- <section class="block lg:hidden">
+        <nav class="lg:flex lg:justify-around lg:items-center lg:gap-10 hidden">
+          <ul
+            class="flex justify-between gap-5 font-bold text-[1em] text-primary-color"
+          >
+            <li class=""><a href="index.html">Home</a></li>
+            <li class=""><a href="teams.html">Teams</a></li>
+            <li class="">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex justify-between items-center gap-[45px]">
+          <button
+            class="flex transition-transform duration-300 hover:scale-110 justify-around items-center gap-2 text-white px-[0.85em] py-[0.7em] rounded-md text-[1em] font-bold bg-[#000000]"
+          >
+            Resume
+            <span><img src="assets/icons/download.svg" alt="" /></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- <section class="block lg:hidden">
         <header class="flex flex-col items-center px-[1.5em] pt-[2em]  ">
              <div class="flex items-center justify-between w-full mb-8">
               <h2 class="text-2xl font-bold"> Bandage </h2>
@@ -61,6 +67,155 @@
         </header>
       </section> -->
 
-      
-</body>
+    <section>
+      <div
+        class="flex lg:justify-around items-center lg:py-[5em] py-[4em] flex-col text-center lg:flex-row lg:max-w-[100em]"
+      >
+        <div class="lg:text-left lg:pl-[6.5em]">
+          <h1 class="lg:text-[3em] text-[2em]">
+            Hello I'm <span class="font-bold">Evren Shah.</span>
+          </h1>
+
+          <h1 class="lg:text-[3em] text-[2em] font-bold">
+            Frontend <span class="font-bold">Developer</span>
+          </h1>
+
+          <h1 class="lg:text-[3em] text-[2em]">
+            Based In <span class="font-bold">India</span>
+          </h1>
+
+          <p class="text-[#737373] pb-8 lg:text-md text-[1em] pt-5">
+            I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
+            <br />
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            <br />
+            dummy text ever since the 1500s, when an unknown printer took a
+            <br />
+            galley of type and scrambled it to specimen book.
+          </p>
+
+          <div class="flex justify-center items-center lg:justify-start gap-8">
+            <div class="bg-black p-3 border rounded-md">
+              <img src="assets/icons/Social icon.svg" alt="Facebook" />
+            </div>
+            <div class="border-black p-3 border rounded">
+              <img src="assets/icons/Social icon (1).svg" alt="Facebook" />
+            </div>
+            <div class="border-black p-3 border rounded">
+              <img src="assets/icons/Social icon (2).svg" alt="Facebook" />
+            </div>
+            <div class="border-black p-3 border rounded">
+              <img src="assets/icons/Social icon (3).svg" alt="Facebook" />
+            </div>
+          </div>
+        </div>
+
+        <div class="w-1/2 lg:pr-[6em]">
+          <img src="assets/images/Frame 20.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[5em]">
+      <h1 class="text-[2em] pb-[2em] text-center sm:text-[40px]">
+        My <span class="font-bold">Skills</span>
+      </h1>
+
+      <div class="flex justify-center items-center gap-[7em]">
+        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
+          <div class="flex justify-center items-center">
+            <img src="assets/icons/Vector.svg" alt="Git" class=" w-14 h-14"/>
+          </div>
+          <h2 class="text-black pt-4 text-center font-bold">Git</h2>
+        </div>
+
+        <div class="min-w-[140px] bg-black p-[24px] border rounded-md">
+          <div class="flex justify-center items-center">
+            <img src="assets/icons/icon-javscript.svg" alt="Javascript" class=" w-14 h-14"/>
+          </div>
+          <h2 class="text-white pt-4 text-center font-bold">JavaScript</h2>
+        </div>
+
+        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
+          <div class="flex justify-center items-center">
+            <img src="assets/icons/Vector (1).svg" alt="saas" class=" w-14 h-14"/>
+          </div>
+          <h2 class="text-black pt-4 text-center font-bold">Saas/Scss</h2>
+        </div>
+
+        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
+          <div class="flex justify-center items-center">
+            <img src="assets/icons/icon-nest.svg" alt="NestJs" class=" w-14 h-14" />
+          </div>
+          <h2 class="text-black pt-4 text-center font-bold">NestJs</h2>
+        </div>
+
+        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
+          <div class="flex justify-center items-center">
+            <img src="assets/icons/icon-storybook.svg" alt="storybook" class=" w-14 h-14" />
+          </div>
+          <h2 class="text-black pt-4 font-bold text-center">Storybook</h2>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center gap-[7em] py-[2em]">
+        
+        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
+          <div class="flex justify-center items-center">
+            <img src="assets/icons/icon-nest.svg" alt="NestJs" class=" w-14 h-14" />
+          </div>
+          <h2 class="text-black pt-4 text-center font-bold">NestJs</h2>
+        </div>
+
+
+        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
+          <div class="flex justify-center items-center">
+            <img src="assets/icons/Vector.svg" alt="Git" class=" w-14 h-14"/>
+          </div>
+          <h2 class="text-black pt-4 text-center font-bold">Git</h2>
+        </div>
+
+         
+        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
+          <div class="flex justify-center items-center">
+            <img src="assets/icons/icon-storybook.svg" alt="storybook" class=" w-14 h-14" />
+          </div>
+          <h2 class="text-black pt-4 font-bold text-center">Storybook</h2>
+        </div>
+
+
+         
+        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
+          <div class="flex justify-center items-center">
+            <img src="assets/icons/icon-socket.svg" alt="socket.io" class=" w-14 h-14" />
+          </div>
+          <h2 class="text-black pt-4 font-bold text-center">Socket.io</h2>
+        </div>
+
+        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
+          <div class="flex justify-center items-center">
+            <img src="assets/icons/Vector (1).svg" alt="saas" class=" w-14 h-14"/>
+          </div>
+          <h2 class="text-black pt-4 text-center font-bold">Saas/Scss</h2>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="bg-black">
+        <h1 class="text-[2em] py-[2em] text-center sm:text-[40px] text-white">
+          My <span class="font-bold">Experience</span>
+        </h1>
+
+        <div>
+          <div class="bg-[]"> 
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
