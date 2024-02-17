@@ -80,10 +80,10 @@
         <hr>
              <nav class="items-center justify-center text-center hidden" id="navbarContent" >
               <ul class=" font-bold text-[1.1em] text-black space-y-10">
-                  <li><a href="index.html">About me</a></li>
-                  <li><a href="#">Skills</a></li>
-                  <li><a href="#">Project</a></li>
-                  <li><a href="#">Contact me</a></li>
+                  <li><a href="#about-section">About me</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#projects">Project</a></li>
+                  <li><a href="#contact">Contact me</a></li>
               </ul>
           </nav>
      
@@ -140,13 +140,13 @@
       
     </section>
 
-    <section class="py-[5em]">
+    <section class="py-[5em]" id="skills">
       <div class="lg:px-[6.5em] px-[1.25em] md:grid md:grid-cols-1">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl py-[1.5em] text-center font-bold ">
         My <span class="font-bold">Skills</span>
       </h1>
            
-      <div class="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-5">
+      <div class="grid lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-5 place-content-center">
 
         <div class="max-w-[160px] border-black p-[24px] border rounded-md">
           <div class="flex justify-center items-center">
@@ -225,88 +225,7 @@
 
       </div>
       </div>
-      <!-- <div class="flex flex-wrap justify-center gap-10 md:grid md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-5"> 
-        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
-          <div class="flex justify-center items-center">
-            <img src="assets/icons/Vector.svg" alt="Git" class=" w-14 h-14"/>
-          </div>
-          <h2 class="text-black pt-4 text-center font-bold">Git</h2>
-        </div>
-
-        <div class="min-w-[140px] bg-black p-[24px] border rounded-md">
-          <div class="flex justify-center items-center">
-            <img src="assets/icons/icon-javscript.svg" alt="Javascript" class=" w-14 h-14"/>
-          </div>
-          <h2 class="text-white pt-4 text-center font-bold">JavaScript</h2>
-        </div>
-
-        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
-          <div class="flex justify-center items-center">
-            <img src="assets/icons/Vector (1).svg" alt="saas" class=" w-14 h-14"/>
-          </div>
-          <h2 class="text-black pt-4 text-center font-bold">Saas/Scss</h2>
-        </div>
-
-        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
-          <div class="flex justify-center items-center">
-            <img src="assets/icons/icon-nest.svg" alt="NestJs" class=" w-14 h-14" />
-          </div>
-          <h2 class="text-black pt-4 text-center font-bold">NestJs</h2>
-        </div>
-
-        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
-          <div class="flex justify-center items-center">
-            <img src="assets/icons/icon-storybook.svg" alt="storybook" class=" w-14 h-14" />
-          </div>
-          <h2 class="text-black pt-4 font-bold text-center">Storybook</h2>
-        </div>
-      </div>
-
-      <div class="flex justify-center items-center gap-[7em] py-[2em]">
-        
-        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
-          <div class="flex justify-center items-center">
-            <img src="assets/icons/icon-nest.svg" alt="NestJs" class=" w-14 h-14" />
-          </div>
-          <h2 class="text-black pt-4 text-center font-bold">NestJs</h2>
-        </div>
-
-
-        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
-          <div class="flex justify-center items-center">
-            <img src="assets/icons/Vector.svg" alt="Git" class=" w-14 h-14"/>
-          </div>
-          <h2 class="text-black pt-4 text-center font-bold">Git</h2>
-        </div>
-
-         
-        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
-          <div class="flex justify-center items-center">
-            <img src="assets/icons/icon-storybook.svg" alt="storybook" class=" w-14 h-14" />
-          </div>
-          <h2 class="text-black pt-4 font-bold text-center">Storybook</h2>
-        </div>
-
-
-         
-        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
-          <div class="flex justify-center items-center">
-            <img src="assets/icons/icon-socket.svg" alt="socket.io" class=" w-14 h-14" />
-          </div>
-          <h2 class="text-black pt-4 font-bold text-center">Socket.io</h2>
-        </div>
-
-        <div class="min-w-[140px] border-black p-[24px] border rounded-md">
-          <div class="flex justify-center items-center">
-            <img src="assets/icons/Vector (1).svg" alt="saas" class=" w-14 h-14"/>
-          </div>
-          <h2 class="text-black pt-4 text-center font-bold">Saas/Scss</h2>
-        </div>
-
-      </div>
-      </div> -->
-
-   
+      
     </section>
      
 
@@ -387,7 +306,7 @@
     </section>
     
 
-    <section class="bg-black text-white ">
+    <section class="bg-black text-white " id="projects">
               <div class="pb-[10em]">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl py-[1.5em] text-center font-bold">
                   My <span class="font-bold">Projects</span>
@@ -430,7 +349,9 @@
                 </div>
 
                 <div class="lg:flex lg:justify-center lg:items-center lg:gap-[5em] lg:px-[6em] flex-col px-5 lg:flex-row "> 
-                  <img src="assets/images/image 770 (1).svg" alt="">
+                  <div class="flex justify-center items-center w-full"> 
+                    <img src="assets/images/image 770 (1).svg" alt="" class="lg:max-w-none max-w-full"> 
+                  </div>
                   <div class="space-y-[2em]">
                     <h3 class="font-bold text-[2em]">03</h3>
                     <h1 class="font-bold sm:text-[2em] text-[1.5em]"> Blog Website Template</h1>
@@ -503,7 +424,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="contact">
 
       <div class="lg:py-[10em] flex lg:justify-center lg:gap-[4em] flex-col lg:flex-row px-7 py-[5em] ">
             
