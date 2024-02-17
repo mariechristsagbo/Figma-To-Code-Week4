@@ -17,6 +17,23 @@
         white-space: nowrap;
         overflow: hidden;
       }
+
+
+      /* @media (min-width: 1024px ) { 
+        #about-section {
+          gap: 2em;
+          font-size: 0.2em;
+
+        }
+      };
+
+      @media (max-width: 1024px ) { 
+        #about-section {
+          gap: 5em;
+          font-size: 0.2em;
+
+        }
+      }; */
     </style>
   </head>
   <body class="font-['Sora']">
@@ -77,7 +94,7 @@
 
     <section>
       <div class="flex lg:items-center py-[4em] flex-col-reverse lg:flex-row lg:justify-around lg:py-[5em] text-left">
-        <div class="lg:text-left lg:pl-[6.5em] pl-[2em] pt-[2em]">
+        <div class="lg:text-left lg:pl-[6.5em] px-[1.25em] pt-[2em]">
           <h1 class="text-[1.5em] lg:text-[3em] text-left ">
             Hello I'm <span class="font-bold" id="typing"></span>
           </h1>
@@ -100,7 +117,7 @@
             galley of type and scrambled it to make a type specimen book.
           </p>
       
-          <div class="flex items-center justify-start gap-8 lg:justify-start">
+          <div class="flex items-center justify-start sm:gap-8 gap-4 lg:justify-start">
             <div class="p-3 border rounded-md bg-black">
               <img src="assets/icons/Social icon.svg" alt="Facebook" />
             </div>
@@ -124,7 +141,7 @@
     </section>
 
     <section class="py-[5em]">
-      <div class="px-[6.5em] md:grid md:grid-cols-1">
+      <div class="lg:px-[6.5em] px-[1.25em] md:grid md:grid-cols-1">
       <h1 class="text-[2em] pb-[2em] text-center sm:text-[40px]">
         My <span class="font-bold">Skills</span>
       </h1>
@@ -220,10 +237,10 @@
           My <span class="font-bold">Experience</span>
         </h1>
 
-        <div class="flex flex-col gap-8 items-center">
+        <div class="flex flex-col gap-8 items-center flex-wrap">
           <div class="border border-[#71717A]  lg:w-[70em] rounded-lg hover:bg-[#D4D4D8]  hover:bg-opacity-10 "> 
-                   <div class="flex items-center justify-between px-4 py-[2em]">
-            <div class="flex  space-x-4 items-center">
+                   <div class="flex items-center justify-between px-4 py-[2em] ">
+                             <div class="flex  space-x-4 items-center">
                     <img src="assets/icons/google.svg" alt="">
                     <p class="font-bold text-xl">Lead Software Engineer at Google</p>
                    </div>
@@ -277,49 +294,33 @@
 
 
     <section>
-<div class="grid grid-cols-2 px-[6.5em] py-[5em]">
-  <div>
-    <img  src="assets/images/Group.svg" alt="">
-  </div>
-
-  <div>
-    <h3 class="text-[3em] "> About <span class="font-bold ">Me</span></h3>
-
-    <div>
-    <p class="text-[#71717A] pb-5 text-[1em]">I'm a passionate, self-proclaimed designer who specializes
-       in full stack <br> development (React.js & Node.js). I am very enthusiastic about bringing the technical and 
-       visual aspects of digital products to life. User  experience, pixel perfect design, and writing clear, readable, 
-       highly performant code matters to me.</p>
-
-
-       <p class="text-[#71717A] pb-5 lg:text-md text-[1em]">I began my journey as a web developer in 2015, and since then, 
-        I've <br> continued to grow and evolve as a developer, taking on new challenges <br> and 
-        learning the latest technologies along the way. Now, in my early <br> thirties, 
-        7 years after starting my web development journey, I'm building cutting-edge web applications using 
-        modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.</p>
-
-        <p class="text-[#71717A] pb-[4em] lg:text-md text-[1em]"> When I'm not in full-on developer mode, you can find me hovering <br>
-           around on twitter or on indie hacker, 
-          witnessing the journey of early <br> startups or enjoying some free time. 
-          You can follow me on Twitter where 
-          I share tech-related bites and build in public, or you can follow me on 
-           GitHub.</p>
+      <div class="flex flex-col px-[1.25em] lg:px-[6.5em] pt-4 lg:grid lg:grid-cols-2 lg:py-20" id="about-section">
+        <div>
+          <img src="assets/images/Group.svg" alt="">
         </div>
-  </div>
-</div>
+        <div>
+          <h3 class="text-4xl font-bold lg:text-6xl pb-5">About <span class="font-extrabold">Me</span></h3>
+          <div class="text-base lg:text-md">
+            <p class="text-gray-600 pb-5">I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
+            <p class="text-gray-600 pb-5">I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.</p>
+            <p class="text-gray-600 pb-10">When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.</p>
+          </div>
+        </div>
+      </div>
     </section>
+    
 
-    <section class="bg-black text-white">
+    <section class="bg-black text-white ">
               <div class="pb-[10em]">
                 <h1 class="text-[2em] py-[2em] text-center sm:text-[40px] text-white">
                   My <span class="font-bold">Projects</span>
                 </h1>
                
-                <div class="flex justify-center items-center gap-[5em] px-[6.5em]"> 
+                <div class=" lg:justify-center lg:items-center lg:gap-[5em] lg:px-[6.5em] flex flex-col px-5 lg:flex-row"> 
                   <img src="assets/images/image.svg" alt="">
                   <div class="space-y-[2em]">
                     <h3 class="font-bold text-[2em]">01</h3>
-                    <h1 class="font-bold text-[2em]"> Crypto Screener Application</h1>
+                    <h1 class="font-bold sm:text-[2em] text-[1.5em]"> Crypto Screener Application</h1>
                     <p class="text-[#D4D4D8] py-[1em]">I'm Evren Shah Lorem Ipsum is simply dummy text of the 
                       printing and typesetting industry. Lorem Ipsum has been the industry's standard 
                       dummy text ever since the 1500s, 
@@ -329,11 +330,11 @@
                   </div>
                 </div>
 
-                <div class="flex justify-center items-center gap-[5em] px-[6em] py-[5em]"> 
+                <div class="lg:flex lg:justify-center lg:items-center lg:gap-[5em] lg:px-[6.5em] flex flex-col-reverse px-5 lg:flex-row"> 
                   <div class="space-y-[2em]">
                     <h3 class="font-bold text-[2em]">02</h3>
-                    <h1 class="font-bold text-[2em]"> Euphoria - Ecommerce (Apparels) Website Template</h1>
-                    <p class="text-[#D4D4D8] py-[1em]">I'm Evren Shah Lorem Ipsum is simply 
+                    <h1 class="font-bold sm:text-[2em] text-[1.5em]"> Euphoria - Ecommerce (Apparels) Website Template</h1>
+                    <p class="text-[#D4D4D8] py-[1em] ">I'm Evren Shah Lorem Ipsum is simply 
                       dummy text of the printing and typesetting industry. Lorem Ipsum has 
                       been the industry's standard dummy text ever since the 1500s, when an 
                       unknown printer took a galley of type and scrambled it to specimen book.
@@ -345,11 +346,11 @@
                   <img src="assets/images/image 770.svg" alt="">
                 </div>
 
-                <div class="flex justify-center items-center gap-[5em] px-[6em]"> 
+                <div class="lg:flex lg:justify-center lg:items-center lg:gap-[5em] lg:px-[6em] flex-col px-5 lg:flex-row "> 
                   <img src="assets/images/image 770 (1).svg" alt="">
                   <div class="space-y-[2em]">
                     <h3 class="font-bold text-[2em]">03</h3>
-                    <h1 class="font-bold text-[2em]"> Blog Website Template</h1>
+                    <h1 class="font-bold sm:text-[2em] text-[1.5em]"> Blog Website Template</h1>
                     <p class="text-[#D4D4D8] py-[1em]">I'm Evren Shah Lorem Ipsum is 
                       simply dummy text of the printing and typesetting industry. 
                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -370,14 +371,15 @@
           My <span class="font-bold">Testimonial</span>
         </h1>
 
-        <div class="grid grid-cols-3 px-[6.5em]">
+        <div class="grid lg:grid-cols-3 lg:px-[6.5em] grid-cols-1 px-[1em] gap-[2em] md:grid-cols-2">
+
           <div class="flex justify-center items-center">
-            <div class="text-center shadow-lg rounded-[2em] px-[3em] py-[1em]">
+            <div class="text-center shadow-lg rounded-[2em] px-[4em] py-[1em] lg:px-[4em] lg:py-[1.5em]">
               <img src="assets/images/Frame 18.svg" alt="" class="mx-auto py-[2em]">
-              <p class="pb-[1.5em] text-md">I recently had to jump on 10+ <br>different calls across 
+              <p class="pb-[1.5em]  lg:text-md text-xs">I recently had to jump on 10+ <br>different calls across 
                 eight <br> different countries to find the <br>right owner.</p>
                 <hr class="w-[5em] h-0 text-black mx-auto pt-2 ">
-                <h4 class="font-bold text-[1.5em] py-5 text-[#404040]">Evren Shah</h4>
+                <h4 class="font-bold sm:text-[1.5em] py-5 text-[#404040] text-[1em]">Evren Shah</h4>
                 <p class="text-md text-[#71717A] font-bold">Designer</p>
             </div>
           </div>
@@ -387,46 +389,47 @@
           <!-- Deuxième block -->
 
           <div class="flex justify-center items-center">
-            <div class="text-center shadow-lg rounded-[2em] px-[3em] py-[1em] bg-black text-white">
+            <div class="text-center shadow-lg rounded-[2em] px-[4em] py-[1em] bg-black text-white lg:px-[4em] lg:py-[1.5em]">
               <img src="assets/images/Frame 18 (1).svg" alt="" class="mx-auto py-[2em]">
-              <p class="pb-[1.5em] text-md">I recently had to jump on 10+ <br>different calls across 
+              <p class="pb-[1.5em] sm:text-md md:text-md lg:text-md text-xs">I recently had to jump on 10+ <br>different calls across 
                 eight <br> different countries to find the <br>right owner.</p>
                 <hr class="w-[5em] h-0 text-black mx-auto pt-2 ">
-                <h4 class="font-bold text-[1.5em] py-5">Flora Sheen</h4>
-                <p class="text-md  font-bold">Designer</p>
+                <h4 class="font-bold sm:text-[1.5em] py-5  text-[1em]">Flora Sheen</h4>
+                <p class="text-md font-bold">Designer</p>
             </div>
           </div>
 
 
           <!-- Troisième block -->
 
-          <div class="flex justify-center items-center">
-            <div class="text-center shadow-lg rounded-[2em] px-[3em] py-[1em]">
+          <div class="flex justify-center items-center md:place-items-center">
+            <div class="text-center shadow-lg rounded-[2em] px-[4em] py-[1em] lg:px-[4em] lg:py-[1.5em] ">
               <img src="assets/images/Frame 18.svg" alt="" class="mx-auto py-[2em]">
-              <p class="pb-[1.5em] text-md">I recently had to jump on 10+ <br>different calls across 
+              <p class="pb-[1.5em] sm:text-md md:text-md lg:text-md text-xs">I recently had to jump on 10+ <br>different calls across 
                 eight <br> different countries to find the <br>right owner.</p>
                 <hr class="w-[5em] h-0 text-black mx-auto pt-2 ">
-                <h4 class="font-bold text-[1.5em] py-5 text-[#404040]">Evren Shah</h4>
+                <h4 class="font-bold sm:text-[1.5em] py-5 text-[#404040] text-[1em]">Evren Shah</h4>
                 <p class="text-md text-[#71717A] font-bold">Designer</p>
             </div>
           </div>
-        </div>
-&nbsp;
+
       
       </div>
     </section>
 
     <section>
 
-      <div class="py-[10em] flex justify-center  gap-[4em]">
+      <div class="lg:py-[10em] flex lg:justify-center lg:gap-[4em] flex-col lg:flex-row px-7 py-[5em] ">
             
-      <div class="grid grid-cols-1 gap-5">
-        <input type="text" placeholder="Your name" class="py-2 px-2 w-[30em] border border-black">
-        <input type="email" placeholder="Email" class="py-2 px-2 w-[30em] border border-black">
-        <input type="text" placeholder="Your website (if exists)" class="py-2 px-2 w-[30em] border border-black">
-        <input type="text" placeholder=" &nbsp; How can I help you ?*" class="py-[5em] w-[30em] border border-black">
-        <div class="flex gap-5">
-          <button class="text-white bg-black p-3 rounded-md font-bold"> Get in touch</button>
+      <div class="grid grid-cols-1 gap-5 pb-5">
+        <input type="text" placeholder="Your name" class="py-2 px-2  sm:w-[30em] border border-black">
+        <input type="email" placeholder="Email" class="py-2 px-2 sm:w-[30em] border border-black">
+        <input type="text" placeholder="Your website (if exists)" class="py-2 px-2 sm:w-[30em] border border-black">
+        <input type="text" placeholder=" &nbsp; How can I help you ?*" class="py-[5em] sm:w-[30em] border border-black">
+        <div class="lg:flex gap-5 flex-wrap ">
+          <div class="">
+          <button class="text-white bg-black p-3 rounded-md font-bold "> Get in touch</button></div>
+          <div class="flex gap-3 pt-4 lg:pt-0">
           <div class="bg-black p-3 border rounded-md">
             <img src="assets/icons/Social icon.svg" alt="Facebook" />
           </div>
@@ -441,14 +444,15 @@
           </div>
         </div>
         </div>
+        </div>
 
 
         <div>
-          <h1 class="text-[3em] font-bold"> Let's talk for <br> Something special </h1>
-          <p class="text-[#71717A] pb-[2em]"> I seek to push the limits of creativity 
+          <h1 class="lg:text-[3em] sm:text-[2.5em] text-[1.75em] font-bold pt-3 lg:pt-0"> Let's talk for <br> Something special </h1>
+          <p class="text-[#71717A] pb-[2em] text-[0.75em] lg:text-[1em] pt-5 lg:pt-0"> I seek to push the limits of creativity 
             to create high-engaging, user- <br>friendly, and memorable interactive experiences.</p>
-            <p class="font-bold text-[1.5em]">Youremail@gmail.com</p>
-            <p class="font-bold text-[1.5em]">1234567890</p>
+            <p class="font-bold text-[1.25em] lg:text-[1.5em]">Youremail@gmail.com</p>
+            <p class="font-bold text-[1.25em] lg:text-[1.5em]">1234567890</p>
         </div>
 
 
@@ -459,9 +463,12 @@
 
 
     <footer class="bg-black text-white py-3">
-        <div class="flex justify-between px-[6.5em] font-bold">
-          <img src="assets/icons/Frame 16.svg" alt="">
-          <div class="text-right"> 
+        <div class="flex lg:justify-between lg:px-[6.5em] font-bold justify-around sm:justify-between sm:px-[1.25em]">
+          <div class="flex justify-center items-center gap-2">
+            <img src="assets/icons/logo_white.svg" alt="">
+            <h2 class="lg:text-[1.2em]">Personal</h2>
+          </div>
+          <div class="text-right lg:text-[1em] sm:text-[0.75em] text-xs"> 
             <p>@ 2019-2023 Personal</p>
             <p>Made In Figma</p>
           </div>
