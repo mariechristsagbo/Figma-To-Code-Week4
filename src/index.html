@@ -68,20 +68,18 @@
       </div>
     </header>
 
-    <!-- <section class="block lg:hidden">
-        <header class="flex flex-col items-center px-[1.5em] pt-[2em]  ">
+    <section class="block lg:hidden sticky top-0">
+        <header class="flex flex-col items-center px-[1.5em] pt-[2em] bg-white ">
+
              <div class="flex items-center justify-between w-full mb-8">
-              <h2 class="text-2xl font-bold"> Bandage </h2>
-              <div class="flex space-x-4 justify-center items-center icon_responsive cursor-pointer">
-                <div><img src="assets/icons/search.svg" alt="" srcset="" class="search"></div>
-                <div><img src="assets/icons/shop.svg" alt="" class="shop"></div>
-                <div><img src="assets/icons/menu.svg" alt="" class="hamburger"></div>
+              <div><img src="assets/icons/Logo.svg" alt=""></div>
+              <div class="flex space-x-4 justify-center items-center icon_responsive cursor-pointer " id= "navbarToggle">
+                <div><img src="assets/icons/hamburger.svg" alt="" ></div>
               </div>
              </div>
-  
-             <nav class="menu flex items-center justify-center">
-              <ul class=" font-bold text-[1em] text-[#737373] space-y-10">
-                <i class="fa-solid fa-xmark cross absolute right-5 top-12 z-10 text-4xl text-gray-400 cursor-pointer"></i>
+        <hr>
+             <nav class="items-center justify-center text-center hidden" id="navbarContent" >
+              <ul class=" font-bold text-[1.1em] text-black space-y-10">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="teams.html">Teams</a></li>
                   <li><a href="pricing.html">Pricing</a></li>
@@ -89,9 +87,10 @@
               </ul>
           </nav>
      
+          
            
         </header>
-      </section> -->
+      </section> 
 
     <section>
       <div class="flex lg:items-center py-[3em] flex-col-reverse lg:flex-row lg:justify-around lg:py-[5em] text-left">
@@ -393,9 +392,11 @@
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl py-[1.5em] text-center font-bold">
                   My <span class="font-bold">Projects</span>
                 </h1>
-               
+               <div class="lg:space-y-[6em] space-y-[6em]">
                 <div class=" lg:justify-center lg:items-center lg:gap-[5em] lg:px-[6.5em] flex flex-col px-5 lg:flex-row"> 
-                  <img src="assets/images/image.svg" alt="">
+                  <div class="flex justify-center items-center w-full"> 
+                    <img src="assets/images/image.svg" alt="" class="lg:max-w-none max-w-full"> 
+                  </div>
                   <div class="space-y-[2em]">
                     <h3 class="font-bold text-[2em]">01</h3>
                     <h1 class="font-bold sm:text-[2em] text-[1.5em]"> Crypto Screener Application</h1>
@@ -404,7 +405,9 @@
                       dummy text ever since the 1500s, 
                       when an unknown printer took a galley of type and scrambled it to specimen book.
                     </p>
-                    <span><img src="assets/icons/Read More.svg" alt=""></span>
+                    <span>
+                      <a href="https://figma-to-code-week3.vercel.app/"><img src="assets/icons/Read More.svg" alt=""></a>
+                    </span>
                   </div>
                 </div>
 
@@ -418,10 +421,12 @@
                       unknown printer took a galley of type and scrambled it to specimen book.
                       when an unknown printer took a galley of type and scrambled it to specimen book.
                     </p>
-                    <span><img src="assets/icons/Read More.svg" alt=""></span>
+                    <span>
+                      <a href="https://figma-to-code-week2.vercel.app/"><img src="assets/icons/Read More.svg" alt=""></a>
+                    </span>
                   </div>
 
-                  <img src="assets/images/image 770.svg" alt="">
+                  <div class="flex justify-center items-center w-full"><img src="assets/images/image 770.svg" alt="" class="lg:max-w-none max-w-full"></div>
                 </div>
 
                 <div class="lg:flex lg:justify-center lg:items-center lg:gap-[5em] lg:px-[6em] flex-col px-5 lg:flex-row "> 
@@ -434,12 +439,15 @@
                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                       when an unknown printer took a galley of type and scrambled it to specimen book.
                     </p>
-                    <span><img src="assets/icons/Read More.svg" alt=""></span>
+                    <span>
+                      <a href="https://docteur-mathew.vercel.app/"><img src="assets/icons/Read More.svg" alt=""></a>
+                    </span>
                   </div>
                 </div>
 
 
               </div>
+            </div>
     </section>
 
 
@@ -586,6 +594,17 @@
     
      
       type();
+    </script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarContent = document.getElementById('navbarContent');
+    
+        navbarToggle.addEventListener('click', () => {
+          navbarContent.classList.toggle('hidden');
+        });
+      });
     </script>
     
     
