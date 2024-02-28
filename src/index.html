@@ -41,13 +41,14 @@
 
   <body class="font-['Sora']">
     <header class="lg:block hidden">
-      <div class="flex justify-between items-center pt-6 px-[6.5em]">
+      <div class="#">
+      <div class="flex justify-between items-center pt-6 px-[6.5em] max-w-[1440px] space-between mx-auto">
         <div>
           <img src="assets/icons/Logo.svg" alt="" />
         </div>
         <nav class="lg:flex lg:justify-around lg:items-center lg:gap-10 hidden">
           <ul
-            class="flex justify-between gap-5 font-bold text-[1em] text-primary-color"
+            class="flex justify-between gap-5 font-bold text-[1.25em] text-primary-color"
           >
             <li class=""><a href="#about-section">About me</a></li>
             <li class=""><a href="#skills">Skills</a></li>
@@ -61,13 +62,14 @@
         </nav>
         <div class="flex justify-between items-center gap-[45px]">
           <button
-            class="flex transition-transform duration-300 hover:scale-110 justify-around items-center gap-2 text-white px-[0.85em] py-[0.7em] rounded-md text-[1em] font-bold bg-[#000000]"
+            class="flex transition-transform duration-300 hover:scale-110 justify-around items-center gap-2 text-white px-[0.85em] py-[0.7em] rounded-md text-[1.25em] font-bold bg-[#000000]"
           >
             Resume
             <span><img src="assets/icons/download.svg" alt="" /></span>
           </button>
         </div>
       </div>
+    </div>
     </header>
 
     <section class="block lg:hidden sticky top-0">
@@ -101,7 +103,7 @@
       </section> 
 
     <section>
-      <div class="flex lg:items-center py-[3em] flex-col-reverse lg:flex-row lg:justify-around lg:py-[3em] text-left">
+      <div class="flex lg:items-center py-[3em] flex-col-reverse lg:flex-row lg:justify-between lg:py-[3em] text-left lg:max-w-[1440px] lg:mx-auto lg:space-between">
         <div class="lg:text-left lg:pl-[6.5em] px-[1.25em] pt-[2em] sm:text-center">
           <h1 class="text-[1.5em] lg:text-[3em] text-left sm:text-center lg:text-left ">
             Hello I'm <span class="font-bold" id="typing"></span>
@@ -149,7 +151,7 @@
     </section>
 
     <section class="pb-[5em]" id="skills">
-      <div class="lg:px-[6.5em] px-[1.25em] md:grid md:grid-cols-1">
+      <div class="lg:px-[6.5em] px-[1.25em] md:grid md:grid-cols-1 lg:max-w-[1440px] lg:mx-auto">
       <h1 class="text-4xl sm:text-5xl lg:text-6xl py-[1.5em] text-center font-bold ">
         My <span class="font-bold">Skills</span>
       </h1>
@@ -246,7 +248,7 @@
         </h1>
     
         <div class="flex flex-col gap-8 items-center md:flex-row md:flex-wrap justify-center lg:flex-col">
-          <div class="border border-[#71717A] w-full  rounded-lg hover:bg-[#D4D4D8] hover:bg-opacity-10 p-4"> 
+          <div class="border border-[#71717A] w-full  rounded-lg hover:bg-[#D4D4D8] hover:bg-opacity-10 p-4 lg:max-w-[1440px]"> 
             <div class="flex items-center justify-between sm:flex-row  flex-wrap space-y-5 sm:space-y-0">
               <div class="flex space-x-4 items-center">
                 <img src="assets/icons/google.svg" alt="">
@@ -262,7 +264,7 @@
               optimizing user experiences for millions of users worldwide.</p>
           </div>
     
-          <div class="bg-[#D4D4D8] bg-opacity-10 w-full sm:flex-row  flex-wrap space-y-5 sm:space-y-0 rounded-lg p-4"> 
+          <div class="bg-[#D4D4D8] bg-opacity-10 w-full sm:flex-row  flex-wrap space-y-5 sm:space-y-0 rounded-lg p-4 lg:max-w-[1440px]"> 
             <div class="flex items-center justify-between sm:flex-row  flex-wrap space-y-5 sm:space-y-0">
               <div class="flex space-x-4 items-center">
                 <img src="assets/icons/youtube.svg" alt="">
@@ -279,7 +281,7 @@
           </div>
     
           <div class="flex flex-col gap-8 items-center md:flex-row md:flex-wrap justify-center lg:flex-col">
-            <div class="border border-[#71717A] w-full  rounded-lg hover:bg-[#D4D4D8] hover:bg-opacity-10 p-4"> 
+            <div class="border border-[#71717A] w-full  rounded-lg hover:bg-[#D4D4D8] hover:bg-opacity-10 p-4 lg:max-w-[1440px]"> 
               <div class="flex items-center justify-between sm:flex-row  flex-wrap space-y-5 sm:space-y-0">
                 <div class="flex space-x-4 items-center">
                 <img src="assets/icons/apple.svg" alt="">
@@ -300,7 +302,7 @@
 
 
     <section>
-      <div class="flex flex-col px-[1.25em] lg:px-[6.5em] pt-4 lg:grid lg:grid-cols-2 lg:py-20" id="about-section">
+      <div class="flex flex-col px-[1.25em] lg:px-[6.5em] pt-4 lg:grid lg:grid-cols-2 lg:py-20 lg:max-w-[1440px] lg:mx-auto" id="about-section" >
         <div>
           <img src="assets/images/Group.svg" alt="" class="sm:mx-auto lg:mx-0">
         </div>
@@ -321,7 +323,7 @@
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl py-[1.5em] text-center font-bold">
                   My <span class="font-bold">Projects</span>
                 </h1>
-               <div class="lg:space-y-[6em] space-y-[6em]">
+               <div class="lg:space-y-[6em] space-y-[6em] lg:max-w-[1440px] lg:mx-auto">
                 <div class=" lg:justify-center lg:items-center lg:gap-[5em] lg:px-[6.5em] flex flex-col px-5 lg:flex-row"> 
                   <div class="flex justify-center items-center w-full"> 
                     <img src="assets/images/image.svg" alt="" class="lg:max-w-none max-w-full"> 
@@ -388,7 +390,7 @@
           My <span class="font-bold">Testimonial</span>
         </h1>
 
-        <div class="grid lg:grid-cols-3 lg:px-[6.5em] grid-cols-1 px-[1em] gap-[2em] md:grid-cols-2">
+        <div class="grid lg:grid-cols-3 lg:px-[6.5em] grid-cols-1 px-[1em] gap-[2em] md:grid-cols-2 lg:max-w-[1440px] lg:mx-auto">
 
           <div class="flex justify-center items-center">
             <div class="text-center shadow-lg rounded-[2em] px-[4em] py-[1em] lg:px-[4em] lg:py-[1.5em] hover:bg-black hover:text-white">
@@ -436,7 +438,7 @@
 
     <section id="contact">
 
-      <div class="lg:py-[10em] flex lg:justify-center lg:gap-[4em] flex-col lg:flex-row px-7 py-[5em] sm:justify-center sm:items-center ">
+      <div class="lg:py-[10em] flex lg:justify-center lg:gap-[4em] flex-col lg:flex-row px-7 py-[5em] sm:justify-center sm:items-center lg:max-w-[1440px] lg:mx-auto">
             
       <div class="grid grid-cols-1 gap-5 pb-5">
         <input type="text" placeholder="Your name" class="py-2 px-2  sm:w-[30em] border border-black rounded">
@@ -480,7 +482,7 @@
 
 
     <footer class="bg-black text-white py-3">
-        <div class="flex lg:justify-between lg:px-[6.5em] font-bold justify-around sm:justify-between sm:px-[1.25em]">
+        <div class="flex lg:justify-between lg:px-[6.5em] font-bold justify-around sm:justify-between sm:px-[1.25em] lg:max-w-[1440px] lg:mx-auto">
           <div class="flex justify-center items-center gap-2">
             <img src="assets/icons/logo_white.svg" alt="">
             <h2 class="lg:text-[1.2em]">Personal</h2>
