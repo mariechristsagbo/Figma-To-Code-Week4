@@ -15,7 +15,7 @@
     <style>
       #typing {
         border-right: 2px solid;
-        font-family: monospace;
+        font-family: 'Sora', sans-serif;
         white-space: nowrap;
         overflow: hidden;
       }
@@ -105,8 +105,8 @@
     <section>
       <div class="flex lg:items-center py-[3em] flex-col-reverse lg:flex-row lg:justify-between lg:py-[3em] text-left lg:max-w-[1440px] lg:mx-auto lg:space-between">
         <div class="lg:text-left lg:pl-[6.5em] px-[1.25em] pt-[2em] sm:text-center">
-          <h1 class="text-[1.5em] lg:text-[3em] text-left sm:text-center lg:text-left ">
-            Hello I'm <span class="font-bold" id="typing"></span>
+          <h1 class="text-[1.5em] lg:text-[3em] text-left sm:text-center lg:text-left">
+            Hello I'm <span class="font-bold" id="typing">Evren Shah</span>
           </h1>
       
           <h1 class="font-bold text-[2em] lg:text-[3em]">
@@ -497,7 +497,8 @@
 
     <script>
       const element = document.getElementById('typing');
-      const text = 'Evren Shah';
+      const text = element.innerText;
+      element.innerText = "";
       let index = 0;
       let deleting = false;
     
